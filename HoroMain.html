@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simply Zodiac</title>
+  </head>
+  <script>
+  function Horoscope(){
+    var month = document.getElementById('box1').value;
+    var day = document.getElementById('box2').value;
+    console.log("hit1");
+    if((month == 1 && (day >=20 && day <= 30)) || (month == 2 && (day <= 18 && day >= 1))){
+      //Aquarius
+      document.getElementById('out1').innerHTML = "<img src = 'aquarius.jpg' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Aquarius-born are shy and quiet , but on the other hand they can be eccentric and energetic." + "<br>" + " However, in both cases, they are deep thinkers and highly intellectual people who love helping others." + "<br>" + " Aquarius-born have a deep need to be some time alone and away from everything, in order to restore power." + "<br>" + " People born under the Aquarius sign, look at the world as a place full of possibilities.";
+    }
+    else if((month == 2 && (day >= 19 && day <= 30)) || (month == 3 && (day <= 20 && day >= 1))){
+      //Pisces
+      document.getElementById('out1').innerHTML = "<img src = 'pisces.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Pisces are very friendly, so they often find themselves in a company of very different people." + "<br>" + " Pisces are selfless, they are always willing to help others, without hoping to get anything back." + "<br>" + " Pisces is a Water sign and as such this zodiac sign is characterized by empathy and expressed emotional capacity";
+    }
+    else if((month == 3 && (day >= 21 && day <= 30)) || (month == 4 && (day <= 19 && day >= 1))){
+      //Aries
+      document.getElementById('out1').innerHTML = "<img src = 'aries.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "As the first sign in the zodiac, the presence of Aries always marks the beginning of something energetic and turbulent." + "<br>" + " They are continuously looking for dynamic, speed and competition, always being the first in everything - from work to social gatherings." + "<br>" + " Thanks to its ruling planet Mars and the fact it belongs to the element of Fire (just like Leo and Sagittarius), Aries is one of the most active zodiac signs." + "<br>" + " It is in their nature to take action, sometimes before they think about it well.";
+    }
+    else if((month == 4 && (day >= 20 && day <= 30)) || (month == 5 && (day <= 20 && day >= 1))){
+      //Taurus
+      document.getElementById('out1').innerHTML = "<img src = 'taurus.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Practical and well-grounded, Taurus is the sign that harvests the fruits of labor." + "<br>" + " They feel the need to always be surrounded by love and beauty, turned to the material world, hedonism, and physical pleasures." + "<br>" + " People born with their Sun in Taurus are sensual and tactile, considering touch and taste the most important of all senses." + "<br>" + " Stable and conservative, this is one of the most reliable signs of the zodiac, ready to endure and stick to their choices until they reach the point of personal satisfaction.";
+    }
+    else if((month == 5 && (day >= 21 && day <= 30)) || (month == 6 && (day <= 20 && day >= 1))){
+      //Gemini
+      document.getElementById('out1').innerHTML = "<img src = 'gemini.jpg' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Expressive and quick-witted, Gemini represents two different personalities in one and you will never be sure which one you will face." + "<br>" + " They are sociable, communicative and ready for fun, with a tendency to suddenly get serious, thoughtful and restless." + "<br>" + " They are fascinated with the world itself, extremely curious, with a constant feeling that there is not enough time to experience everything they want to see.";
+    }
+    else if((month == 6 && (day >= 21 && day <= 30)) || (month == 7 && (day <= 22 && day >= 1))){
+      //Cancer
+      document.getElementById('out1').innerHTML = "<img src = 'cancer.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Deeply intuitive and sentimental, Cancer can be one of the most challenging zodiac signs to get to know." + "<br>" + " They are very emotional and sensitive, and care deeply about matters of the family and their home." + "<br>" + " Cancer is sympathetic and attached to people they keep close." + "<br>" + " Those born with their Sun in Cancer are very loyal and able to empathize with other people's pain and suffering.";
+    }
+    else if((month == 7 && (day >= 23 && day <= 30)) || (month == 8 && (day <= 22 && day >= 1))){
+      //Leo
+      document.getElementById('out1').innerHTML = "<img src = 'leo.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "People born under the sign of Leo are natural born leaders." + "<br>" + " They are dramatic, creative, self-confident, dominant and extremely difficult to resist, able to achieve anything they want to in any area of life they commit to." + "<br>" + " There is a specific strength to a Leo and their 'king of the jungle' status." + "<br>" + " Leo often has many friends for they are generous and loyal." + "<br>" + " Self-confident and attractive, this is a Sun sign capable of uniting different groups of people and leading them as one towards a shared cause, and their healthy sense of humor makes collaboration with other people even easier.";
+    }
+    else if((month == 8 && (day >= 23 && day <= 30)) || (month == 9 && (day <= 22 && day >= 1))){
+      //virgo
+      document.getElementById('out1').innerHTML = "<img src = 'virgo.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Virgos are always paying attention to the smallest details and their deep sense of humanity makes them one of the most careful signs of the zodiac." + "<br>" + " Their methodical approach to life ensures that nothing is left to chance, and although they are often tender, their heart might be closed for the outer world." + "<br>" + " This is a sign often misunderstood, not because they lack the ability to express, but because they won’t accept their feelings as valid, true, or even relevant when opposed to reason." + "<br>" + " The symbolism behind the name speaks well of their nature, born with a feeling they are experiencing everything for the first time.";
+    }
+    else if((month == 9 && (day >= 23 && day <= 30)) || (month == 10 && (day <= 22 && day >= 1))){
+      //libra
+      document.getElementById('out1').innerHTML = "<img src = 'libra.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "People born under the sign of Libra are peaceful, fair, and they hate being alone." + "<br>" + " Partnership is very important for them, as their mirror and someone giving them the ability to be the mirror themselves." + "<br>" + " These individuals are fascinated by balance and symmetry, they are in a constant chase for justice and equality, realizing through life that the only thing that should be truly important to themselves in their own inner core of personality." + "<br>" + " This is someone ready to do nearly anything to avoid conflict, keeping the peace whenever possible";
+    }
+    else if((month == 10 && (day >= 23 && day <= 30)) || (month == 11 && (day <= 21 && day >= 1))){
+      //Scorpio
+      document.getElementById('out1').innerHTML = "<img src = 'scorpio.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Scorpio-born are passionate and assertive people." + "<br>" + " They are determined and decisive, and will research until they find out the truth." + "<br>" + " Scorpio is a great leader, always aware of the situation and also features prominently in resourcefulness.";
+    }
+    else if((month == 11 && (day >= 22 && day <= 30)) || (month == 12 && (day <= 21 && day >= 1))){
+      //Sagittatius
+      document.getElementById('out1').innerHTML = "<img src = 'sagittarius.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Curious and energetic, Sagittarius is one of the biggest travelers among all zodiac signs." + "<br>" + " Their open mind and philosophical view motivates them to wander around the world in search of the meaning of life." + "<br>" + " Sagittarius is extrovert, optimistic and enthusiastic, and likes changes." + "<br>" + " Sagittarius-born are able to transform their thoughts into concrete actions and they will do anything to achieve their goals.";
+    }
+    else if((month == 12 && (day >= 22 && day <= 30)) || (month == 1 && (day <= 19 && day >= 1))){
+      //Capricorn
+      document.getElementById('out1').innerHTML = "<img src = 'capricorn.png' width = '200' height = '200'>";
+      document.getElementById('out2').innerHTML = "Capricorn is a sign that represents time and responsibility, and its representatives are traditional and often very serious by nature." + "<br>" + " These individuals possess an inner state of independence that enables significant progress both in their personal and professional lives." + "<br>" + " They are masters of self-control and have the ability to lead the way, make solid and realistic plans, and manage many people who work for them at any time." + "<br>" + " They will learn from their mistakes and get to the top based solely on their experience and expertise.";
+    }
+  }
+  </script>
+  <style>
+    body{
+      background-image: url('stary.jpg');
+      background-size: 100%;
+    }
+    h1{
+      color: #66d9ff;
+      background-color: black;
+      margin-left: 30px;
+      margin-right: 65%;
+      padding-left: 20px;
+    }
+    #but1{
+      background-color: lightgrey;
+      color: black;
+      border: 2px solid blue;
+      transition-duration: 0.5s;
+    }
+    #but1:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    #out2{
+      font-size: 20px;
+      color: white;
+    }
+    #p1{
+      color: #ff4dd2;
+    }
+    #p2{
+      font-size: 20px;
+      color: #ff4dd2;
+      text-shadow: 2px 2px white;
+    }
+  </style>
+  <body>
+    <h1>Simply explained horoscopes</h1>
+    <center><p id = 'p1'>Have you ever walked into your local Starbucks to order for your daily carmel frappicino, and <br>
+       as you sit and wait for your coffee your want to have a conversation with the person next to you.<br>
+       You find mutal attracktion and decide to hangout. You call each other up to try and hang out, but<br>
+       right as you go to leave her house she says. "Wait whats your horoscope!" You freeze. You don't<br>
+       know. She angrily turns around and leaves saying, "I only hang out with Leos."<br><br></p><center>
+    <p id = 'p2'>If so we got your BACK! We will tell you EXCATLY what your horoscope is and what is means!<br>
+       We can tell you how to use that horoscope with FRIENDS! Simply put a name and birth day(Month and year).</p>
+    <input id = "box1" type = "text" value = "Month">
+    <input id = "box2" type = "text" value = "Day">
+    <input id = "but1" type = "button" value = "Submit" onclick = "Horoscope()"><br>
+    <span id = 'out1'></span><br>
+    <span id = 'out2'></span>
+  </body>
+</html>
